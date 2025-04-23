@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Underline:ital,wght@0,100..900;1,100..900&display=swap');
-body{
+body,html{
     font-family: "Montserrat", sans-serif;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    height: ;
 }
 #contacto{
     background-image: url(../image/fondo-contacto.png);
@@ -13,10 +14,9 @@ body{
     background-image: url(../image/fondo-contacto.png);
     background-size: cover;
     background-repeat: no-repeat;
-
 }
 #proyectos{
-    background-image: url(../image/fondo-contacto.png);
+    background-image: url(../image/fondo-proyectos.png);
     background-size: cover;
 }
 #sobre-mi{
@@ -60,6 +60,8 @@ p{
     background-size: cover;
     padding: 40px 20px;
     min-height: 200px;
+    display: block;
+    box-sizing: border-box;
 }
 #contacto footer .fa-github, #inicio footer .fa-github{
     font-size: 30px;
@@ -130,6 +132,9 @@ footer .fa-whatsapp{
     background-color: #e20000;
     background: #8c0101;
     background: linear-gradient(90deg, rgba(140, 1, 1, 1) 0%, rgba(201, 0, 0, 1) 35%, rgba(245, 95, 108, 0.92) 100%);
+}
+#proyecto .flex column{
+    flex-direction: column;
 }
 .proyecto img{
     height: 212px;
@@ -214,6 +219,7 @@ section {
 }
 #sobre-mi img{
     border-radius: 600%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),url();
 }
 #experiencia h2{
     font-size: 24px;
@@ -247,7 +253,44 @@ section {
     color: #370a6d;
     font-weight: 400;
 }
-
+#formacion h3{
+    color: #6a6a6a;
+    font-size: 18px;
+    font-weight: 600;
+}
+#formacion h4{
+    font-size: 17px;
+    color: #370a6d;
+}
+#formacion h5{
+    font-size: 15px;
+    color: #6a6a6a;
+}
+#formacion p{
+    font-size: 16px;
+    color: #6a6a6a;
+}
+#idiomas i{
+    font-size: 80px;
+    color: #ffffff;
+}
+#idiomas h2{
+    font-size: 22px;
+    color: #370a6d;
+    font-weight: 400;
+}
+#idiomas h3{
+    color: #6a6a6a;
+    font-size: 15px;
+}
+.fa-regular, .far {
+font-weight: 400;
+}
+#idiomas .card{
+background-color: #370a6d;
+border-radius: 14px;
+padding: 40px 0;
+}
 
 @media (max-width: 750px) {
     #contacto, #inicio{
